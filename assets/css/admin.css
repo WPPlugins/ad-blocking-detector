@@ -1,0 +1,293 @@
+#abdwpsm_content, 
+#abdwpsm_content p {
+	font-size: 1em;
+}
+
+div.abdwpsm_display_description {
+	font-size: 1.15em;
+}
+
+#abdwpsm_content div.wp-editor-wrap {
+	max-width: 700px;
+}
+
+#abdwpsm_content textarea {
+	min-width: 600px;
+	min-height: 350px;
+}
+
+#abdwpsm_content div.CodeMirror {
+	width: 700px !important;
+
+	border: 1px solid #DDD;
+}
+
+#abdwpsm_content ul {
+	margin-left: 2em;
+	list-style-type: disc;
+	font-size: inherit;
+}
+
+
+.abd_dev_sig {
+	font-size: 0.9em;
+}
+	.abd_dev_sig span {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+.abd_failure_message {
+	color: #A00 !important;
+	font-weight: bold;
+}
+	ul.abd_failure_message:before,
+	ol.abd_failure_message:before,
+	li.abd_failure_message:before {
+		content: '\2717  ';
+		color: #F00;
+		margin-right: 8px;
+	}
+
+.abd_success_message {
+	color: #006B00 !important;
+	font-weight: normal;
+}
+	.abd_success_message:before {
+		content: '\2713  ';
+		color: #0C0;
+		margin-right: 8px;
+	}
+
+.abd_unknown_message {
+	color: #B58C09 !important;
+}
+	.abd_unknown_message:before {
+		content: '?  ';
+		margin-right: 8px;
+	}
+
+
+/**********************
+ * Tab, Options Group, and Section Generic Formatting
+ *********************/
+.abdwpsm_tab_wrapper {	/* Each shortcode section */
+	padding-left: 50px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+	.abdwpsm_tab_wrapper h3 {
+		margin-left: -50px;  /* Offset padding to create indentation look */
+		font-size: 1.4em;
+	}
+		.abdwpsm_tab_wrapper h3:before {
+			content:'\21D2  ';
+			font-size: 1.5em;
+			color: #0073AA;
+		}
+
+.abdwpsm_tab_display_description {
+	border-bottom: 3px solid #CCC;
+
+	margin-bottom: 50px;
+
+	padding-bottom: 20px;
+}
+
+
+/**********************
+ * Manage Shortcodes Tab Specific
+ *********************/
+#abdwpsm_tab-manage-shortcodes div.CodeMirror {
+	height: auto !important;
+
+	border: 1px solid #DDD;
+}
+#abdwpsm_tab-manage-shortcodes form {
+	border-bottom: 3px solid #CCC;
+}	
+	.abdwpsm_tab_wrapper .abd-shortcode-get-button,
+	.abdwpsm_tab_wrapper .abd-shortcode-get-button:hover {
+		background-color: #78d639;
+		font-size: 1.2em;
+
+		border: 1px solid #555;
+
+		color: #222;
+	}
+		.abdwpsm_tab_wrapper .abd-shortcode-get-button:before {
+			content:'\2713 \0020';
+		}
+	.abdwpsm_tab_wrapper .abd-delete-button,
+	.abdwpsm_tab_wrapper .abd-delete-button:hover {
+		background-color: #FF7F7F;
+		font-size: 1.2em;
+
+		border: 1px solid #555;
+
+		color: #222;
+	}
+		.abdwpsm_tab_wrapper .abd-delete-button:before {
+			content:'\2717 \0020';
+		}
+
+
+
+/*************
+ * Getting Started Message
+ *************/
+ #abd_getting_started_message {
+ 	
+ }
+
+
+ /************
+  * Settings Tab Specific
+  ***********/
+  #abd-fallback-plugin-controls a.button {
+  	color: #222 !important;
+  }
+  #abd-fallback-plugin-controls a.button-primary {
+  	color: #FFF !important;
+  }
+  #abd-fallback-plugin-controls .abd-fallback-pluign-delete-button {
+  	background-color: #FF7F7F;		
+  }
+
+
+/********************
+ * Masonry
+ *******************/
+ span.abd-masonry-header-charm {
+ 	color: #F00;
+ }
+div.abd-masonry-block {
+	width: 460px;	
+	max-width: 800px;
+
+	float: left;
+	margin: 0 60px 60px 0;
+	padding: 20px;
+
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+
+	box-shadow: 2px 2px 8px 0 #444;
+
+	box-sizing: border-box; /* Prevent border thickenss changes from breaking Masonry layout */
+}
+ 	div.abd-masonry-block>h3 {
+ 		font-size: 15px;
+ 		margin: -20px -20px 10px -20px;
+ 		padding: 15px 10px;
+
+ 		border-bottom: 1px solid #CCC;
+ 	}
+
+ 	div.abd-masonry-block>img.abd-masonry-image {
+ 		max-width: 150px;
+ 		max-height: 150px;
+
+ 		float: left;
+
+ 		margin: 0 20px 10px 0;
+ 	}
+
+ 	div.abd-masonry-block p,
+ 	div.abd-masonry-block li {
+ 	font-size: 1.05em;
+ 	color: #484848;
+
+ 	line-height: 1.5;
+ 	}
+
+ 	div.abd-masonry-block p {
+ 		margin-bottom: 15px;
+ 	}
+ 	div.abd-masonry-block textarea {
+ 		width: 400px !important;
+ 		min-width: 100px !important;
+ 		min-height: 200px;
+ 	}
+
+
+ 	div.abd-masonry-block table {
+ 		width: auto;
+ 		border-collapse: collapse;
+ 	}
+ 		div.abd-masonry-block table th,
+ 		div.abd-masonry-block table td {
+ 			padding: 10px 15px;
+ 			text-align: left;
+
+ 			border: 1px solid #AAA;
+ 		}
+
+ 	div.abd-masonry-block.abd-stark-highlight {
+ 		background-color: #282828;
+ 		border-color: #FFAA44;
+ 		border-width: 3px;
+ 		color: #DDD;
+ 		box-shadow: 8px 10px 13px 0 #444;
+ 	}
+ 		div.abd-masonry-block.abd-stark-highlight p,
+ 		div.abd-masonry-block.abd-stark-highlight li {
+ 			color: #DDD;
+ 		}
+ 		div.abd-masonry-block.abd-stark-highlight a,
+ 		div.abd-masonry-block.abd-stark-highlight a:visited {
+ 			color: #99CCFF;
+ 		}
+ 		div.abd-masonry-block.abd-stark-highlight h3 {
+ 			color: #FFF;
+ 		}
+
+ 	div.abd-masonry-block.abd-subtle-highlight {
+ 		border-color: #41B7FF;
+ 		border-width: 3px;
+ 	}
+
+ 	@media (max-width: 1380px) {
+ 		div.abd-masonry-block {
+			width: auto;
+			min-width: 460px;
+		}
+ 	}
+
+
+div.abd-stats-chart {
+	width: 650px;
+	height: 500px;
+}
+p.abd-stats-chart-caption {
+	width: 650px;
+	font-size: 1.1em;
+
+	padding-bottom: 20px;
+	border-bottom: 3px solid #999;
+}
+
+
+ /********************
+ * jQuery UI Fixes
+ ********************/
+ /* Dialog overlay not over certain elements */
+ .abd-jqui .ui-front {
+ 	z-index: 10001 !important;
+ }
+ .abd-jqui .ui-dialog {
+ 	z-index: 10002 !important;
+ }
+
+
+ /********************************
+ * Notification Beautification
+ ********************************/
+.abd-notice, 
+.abd-notice p {
+	font-size: 1.15em;
+}
+.abd-notice-blue {
+	border-left-color: #0080FF !important;
+}
